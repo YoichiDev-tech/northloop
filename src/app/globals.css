@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f4f6fb;
+  --foreground: #1a1f30;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+/* I keep focus rings visible and on-brand for keyboard users */
+:focus-visible {
+  outline: 2px solid #3399ff;
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .interactive-card {
+    @apply transition-[transform,border-color,box-shadow] duration-200 ease-out;
+  }
+
+  .interactive-card:focus-within {
+    @apply border-signal-300 shadow-lg;
+  }
+
+  .interactive-button {
+    @apply transition-[transform,background-color,color,box-shadow] duration-200 ease-out;
+  }
+}
+
+@media (hover: hover) {
+  .interactive-card:hover,
+  .interactive-card:focus-within {
+    @apply border-signal-300 shadow-lg;
+  }
+
+  .interactive-button:hover {
+    @apply shadow-md;
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .interactive-card:hover,
+  .interactive-card:focus-within {
+    transform: translateY(-4px);
+  }
+
+  .interactive-button:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.interactive-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
