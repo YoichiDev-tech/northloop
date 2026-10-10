@@ -2,14 +2,14 @@
 // site stays consistent and easy to update when the product evolves.
 
 export const site = {
-  name: "Northloop",
-  tagline: "Operational software for teams that move",
+  name: "OpsRook",
+  tagline: "Operational software for teams that keep work moving",
   description:
-    "Northloop helps growing service and field teams run jobs, updates, and customer communication from one place.",
-  location: "Manchester, UK · Remote-first",
-  email: "hello@northloop.app",
+    "OpsRook helps growing service and field teams run jobs, updates, and customer communication from one place.",
+  location: "Fictional case study · UK",
+  email: "hello@opsrook.example",
   phone: "+44 161 555 0190",
-  domain: "northloop.app",
+  domain: "opsrook.example",
 };
 
 export const navLinks = [
