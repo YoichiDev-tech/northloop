@@ -2,7 +2,7 @@
   "name": "northloop",
   "version": "1.0.0",
   "private": true,
-  "description": "Northloop — operational software for teams that move. Built by PrismWave Studio as a case-study site for independent tech companies.",
+  "description": "OpsRook — fictional operational software case study by PrismWave Studio.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
