@@ -1,4 +1,4 @@
-# Northloop — operational software for teams that move
+# OpsRook — operational software for teams that move
 
 This is a complete, production-style marketing site for an independent tech company.
 
