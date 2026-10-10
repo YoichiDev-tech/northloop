@@ -5,7 +5,7 @@ import { Wrench, Building2, Truck, Headphones } from "lucide-react";
 export const metadata: Metadata = {
   title: "Solutions",
   description:
-    "How Northloop helps field service, multi-site operations, logistics, and support teams run cleaner days.",
+    "How OpsRook helps field service, multi-site operations, logistics, and support teams run cleaner days.",
 };
 
 // Solutions — I map the product to the kinds of teams we actually serve
@@ -46,7 +46,7 @@ export default function SolutionsPage() {
             Built for teams that leave the desk
           </h1>
           <p className="mt-4 text-ink-600">
-            Northloop is a good fit when the work lives between the office and
+            OpsRook is a good fit when the work lives between the office and
             the field — and when spreadsheets have started to break under volume.
           </p>
         </div>
