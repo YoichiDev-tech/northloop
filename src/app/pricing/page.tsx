@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Simple Northloop pricing for growing service and field teams. Monthly or annual. No long contracts.",
+    "Simple OpsRook pricing for growing service and field teams. Monthly or annual. No long contracts.",
 };
 
 // Pricing — I keep plans few and the language concrete so finance and

@@ -58,7 +58,7 @@ export default function HomePage() {
                 <span className="h-2.5 w-2.5 rounded-full bg-ink-600" />
                 <span className="h-2.5 w-2.5 rounded-full bg-ink-600" />
                 <span className="h-2.5 w-2.5 rounded-full bg-ink-600" />
-                <span className="ml-3 text-xs text-ink-400">northloop · today</span>
+                <span className="ml-3 text-xs text-ink-400">opsrook · today</span>
               </div>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {["Open jobs", "In progress", "Waiting on customer", "Done today"].map(
@@ -138,7 +138,7 @@ export default function HomePage() {
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-ink-600">
             A short demo on your workflows — not a generic slideshow. We will tell
-            you quickly if Northloop is the right fit.
+            you quickly if OpsRook is the right fit.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link

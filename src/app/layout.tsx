@@ -36,8 +36,8 @@ export const metadata: Metadata = {
     description: site.tagline,
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
   },
 };
 
