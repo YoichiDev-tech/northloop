@@ -1,6 +1,6 @@
 # OpsRook — operational software for teams that move
 
-This is a complete, production-style marketing site for an independent tech company.
+This is a fictional portfolio case study for an independent tech product website; it is not a live service.
 
 We built it as a **case-study project** for PrismWave Studio — the standard of site we deliver
 for small and medium tech businesses that need to look credible, take demo requests, 
@@ -78,17 +78,17 @@ This project goes the other way: specific problem, specific audience (service an
 Use it when you talk to leads:
 
 - "This is the kind of site we build for independent product companies."
-- "It explains the product, takes demos, and is ready for real screenshots and a live Supabase project."
+- "It demonstrates the product story and enquiry flow; backend, abuse protection, and legal/domain checks remain pre-launch tasks."
 
 
 ## Production hand-off
 
 - Replace the dark product panel on the home page with real product screenshots when available.
 - Set `NEXT_PUBLIC_SITE_URL` to the canonical HTTPS domain used for deployment.
-- Configure `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`; preferably configure `SUPABASE_SERVICE_ROLE_KEY` as a server-only secret. Never expose the service role key with a `NEXT_PUBLIC_` prefix.
+- Configure `NEXT_PUBLIC_SUPABASE_URL` and the required server-only `SUPABASE_SERVICE_ROLE_KEY`. The API does not fall back to the public anon key. Never expose the service-role key with a `NEXT_PUBLIC_` prefix.
 - Apply `supabase-schema.sql` in the production Supabase project and verify a submitted request reaches `demo_requests`.
 - Configure an email notification workflow if demo requests need to alert the team; the current API stores requests but does not send email.
-- Add the production privacy notice, cookie policy if applicable, and any required consent or anti-spam controls before collecting real customer data.
+- Add provider-backed rate limiting, email notifications, and a production privacy notice before collecting real customer data.
 - Run `npm run lint` and `npm run build` before deployment.
 - Comments in the code are written in first person so intent is clear when someone else opens the project.
 - Pricing numbers are illustrative for the case study — adjust for a real product.
