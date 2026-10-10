@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Northloop is an independent software company based in Manchester. We build operational tools for service and field teams.",
+    "OpsRook is an independent software company based in Manchester. We build operational tools for service and field teams.",
 };
 
 // About — I write as the company so the page feels owned by the product
@@ -24,14 +24,14 @@ export default function AboutPage() {
           </h1>
           <div className="mt-8 space-y-5 text-base leading-relaxed text-ink-700">
             <p>
-              Northloop started because too many service businesses were running
+              OpsRook started because too many service businesses were running
               the day on spreadsheets, group chats, and memory. The tools on the
               market were either too light or required a project the size of a
               second business.
             </p>
             <p>
               We are a small product company. We design, build, and support
-              Northloop ourselves. No resellers, no white-label maze — if
+              OpsRook ourselves. No resellers, no white-label maze — if
               something is wrong, you talk to people who wrote the product.
             </p>
             <p>
