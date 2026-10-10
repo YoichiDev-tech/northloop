@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Book a Northloop demo or send a message. We reply within one working day.",
+    "Book a OpsRook demo or send a message. We reply within one working day.",
 };
 
 export default function ContactPage() {
