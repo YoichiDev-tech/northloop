@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "Product",
   description:
-    "Northloop product overview — live job board, customer updates, team schedule, and simple reporting for service teams.",
+    "OpsRook product overview — live job board, customer updates, team schedule, and simple reporting for service teams.",
 };
 
 // Product page — I describe capabilities in plain language so an ops lead
@@ -63,7 +63,7 @@ export default function ProductPage() {
             Everything the day needs in one product
           </h1>
           <p className="mt-4 text-ink-600">
-            Northloop is intentionally focused. We do not try to replace your
+            OpsRook is intentionally focused. We do not try to replace your
             entire stack — we replace the spreadsheets and group chats that
             slow the team down.
           </p>
