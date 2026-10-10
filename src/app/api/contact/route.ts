@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
     email.length > 254 ||
     company.length > 160 ||
     message.length > 5000 ||
-    !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)
+    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   ) {
     return NextResponse.json({ error: "Please check your details and try again." }, { status: 400 });
   }
