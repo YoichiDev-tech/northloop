@@ -28,6 +28,7 @@ export default function DemoForm() {
           company: data.get("company") || undefined,
           team_size: data.get("team_size") || undefined,
           message: data.get("message"),
+          website: data.get("website"),
           source: "website-demo",
         }),
       });
@@ -76,6 +77,19 @@ export default function DemoForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      <div
+        aria-hidden="true"
+        className="absolute -left-[10000px] h-px w-px overflow-hidden"
+      >
+        <label htmlFor="website">Leave this field empty</label>
+        <input
+          id="website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-ink-800">
